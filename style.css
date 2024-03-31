@@ -1,0 +1,342 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+/*navigation bar*/
+
+.navcontainer {
+    height: 90px;
+    padding: 0 7%;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.navbar {
+    height: 80px;
+    padding: 0 5%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+select {
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    color: gray;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.navuser-button {
+    width: 200px;
+    height: 50px;
+    /* margin-right: 7%; */
+    margin-bottom: 0.3%;
+}
+
+
+ul.user-button>li {
+    list-style-type: none;
+    float: left;
+    margin-right: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+li.prf a:link,
+li.prf a:visited {
+    color: rgb(108, 105, 105);
+}
+
+
+ul.nav-button1>li {
+    list-style-type: none;
+    float: left;
+    margin-left: 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ul.nav-button2>li {
+    list-style-type: none;
+    float: left;
+    margin-left: 25px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/*header*/
+
+header {
+    position: relative;
+    height: 450px
+}
+
+.banner input[type="radio"] {
+    display: none;
+}
+
+.banner-slide {
+    position: absolute;
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.banner input[type="radio"]:checked+.banner-slide {
+    opacity: 1;
+}
+
+.banner-controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.banner-controls label {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* .banner-controls label {
+    cursor: pointer;
+    height: 3px;
+    width: 70px;
+    margin: 1px 0;
+    background-color: beige;
+    border-radius: 0;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+} */
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: gray;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.left {
+    left: 30px;
+    margin-left: 20px;
+}
+
+.right {
+    right: 30px;
+    margin-right: 20px;
+}
+
+/* #banner-toggle:checked+header .banner-image {
+    opacity: 1;
+} */
+
+
+/* .banner {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+.slide1 {
+    background-image: url('https://www.learnus.org/pluginfile.php/1/local_ubion/mainslider2/239/Chatgpt%201920.png');
+}
+
+.slide2 {
+    background-image: url('https://www.learnus.org/pluginfile.php/1/local_ubion/mainslider2/240/%ED%83%80%EC%9D%B8%202560%20%281%29.png');
+}
+
+#banner-toggle:checked + header .slide {
+    opacity: 1;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: rgb(24, 2, 2);
+    font-size: 24px;
+}
+  
+.left {
+    left: 20px;
+}
+  
+.right {
+    right: 20px;
+} */
+
+
+/* section */
+
+.sec {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 0;
+    background-color: white;
+}
+
+.sec-title {
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    padding: 15px 20px;
+    font-size: 18px;
+    border: 1px solid #003876;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    width: 700px;
+    height: 75px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #003876;
+    color: #fff;
+    border: 1px solid #003876;
+    border-radius: 0 10px 10px 0;
+    width: 80px;
+    height: 75px;
+    cursor: pointer;
+    margin-left: -4px;
+}
+
+
+.sec-sub {
+    position: relative;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 100px;
+}
+
+.sec-sub h2 {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.sec-sub i {
+    color: red;
+}
+
+.sec-sub p {
+    margin-top: 10px;
+    font-size: 20px;
+    /* font-weight: bold; */
+    color: #7E848E
+}
+
+.sec article {
+    float: left;
+    width: 280px;
+    margin-top: 30px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.sec article:last-child {
+    margin-right: 0;
+}
+
+.sec article img {
+    width: 100%;
+    height: 100%;
+}
+
+.classpro {
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: gray;
+}
+
+.classname {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.classruntime {
+    margin-top: 40px;
+    font-size: 14px;
+    color: gray;
+}
+
+.classfee {
+    font-size: 18px;
+    font-weight: bold;
+    color: blue;
+}
+
+.card-img {
+    overflow: hidden;
+    height: 200px;
+    width: 280px;
+    border-radius: 5% 5% 5% 5%;
+    border: 0.5px solid rgb(241, 238, 238);
+    /* box-shadow: 2px 2px 3px 0.1px gray;*/
+}
+
+.sec::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* footer */
+.ft {
+    padding: 15px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
